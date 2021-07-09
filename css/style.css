@@ -1,0 +1,83 @@
+body {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: whitesmoke;
+}
+#loginForm div {
+  height: 5vh;
+  width: 50vh;
+  margin: 3vh 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0.5;
+}
+#loginInput {
+  width: 30vh;
+  text-align: center;
+  font-size: 3vh;
+  border-radius: 3vh;
+}
+#loginForm input:last-child {
+  width: 10vh;
+  font-size: 3vh;
+  border-radius: 3vh;
+}
+#clock {
+  margin: 0;
+  font-size: 15vh;
+}
+img {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  opacity: 0.9;
+  z-index: -1;
+}
+#greetings {
+  margin: 3vh 0;
+  font-size: 4vh;
+}
+#toDoForm input {
+  width: 35vh;
+  font-size: 2vh;
+  text-align: center;
+  background: none;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2vh;
+  color: white;
+}
+#toDoList {
+  width: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#toDoList li button {
+  background: none;
+  border: none;
+  position: relative;
+  left: 3vh;
+}
+#weather div {
+  width: 40vh;
+  font-size: 3vh;
+  font-weight: bold;
+  text-align: center;
+  border: 0.5vh solid whitesmoke;
+  border-radius: 5vh;
+  position: absolute;
+  top: 3vh;
+  right: 4vh;
+}
+
+.hidden {
+  display: none;
+}
