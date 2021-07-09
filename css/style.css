@@ -17,22 +17,52 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 #loginInput {
   width: 30vh;
+  padding: 1vh;
   text-align: center;
   font-size: 3vh;
+  background-color: rgba(256, 256, 256, 0.5);
+  color: whitesmoke;
+  border: none;
   border-radius: 3vh;
+  transition: all 0.5s ease-in-out;
+}
+#loginInput:hover,
+#loginInput:focus {
+  background-color: rgba(256, 256, 256, 0.9);
+  color: rgba(0, 0, 0, 0.7);
+  border: 0.2vh solid rgba(0, 0, 0, 0.7);
+  outline: none;
+  font-weight: bold;
 }
 #loginForm input:last-child {
-  width: 10vh;
+  width: 12vh;
+  padding: 1vh;
   font-size: 3vh;
   border-radius: 3vh;
+  border: none;
+  background-color: gray;
+  color: whitesmoke;
+  transition: all 0.5s ease-in-out;
+}
+#loginForm input:last-child:hover,
+#loginForm input:last-child:focus {
+  background-color: rgba(256, 256, 256, 0.9);
+  color: rgba(0, 0, 0, 0.7);
+  border: 0.2vh solid rgba(0, 0, 0, 0.7);
+  outline: none;
+  font-weight: bold;
 }
 #clock {
   margin: 0;
   font-size: 15vh;
+  transition: all 0.5s ease-in-out;
+}
+#clock:hover {
+  font-size: 17vh;
 }
 img {
   position: fixed;
@@ -47,18 +77,31 @@ img {
 }
 #toDoForm input {
   width: 35vh;
+  padding: 1vh;
   font-size: 2vh;
   text-align: center;
-  background: none;
-  border-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(256, 256, 256, 0.5);
+  outline: none;
+  border: none;
   border-radius: 2vh;
-  color: white;
+  color: whitesmoke;
+  transition: all 0.5s ease-in-out;
+}
+#toDoForm input:hover,
+#toDoForm input:focus {
+  background-color: rgba(256, 256, 256, 0.9);
+  color: rgba(0, 0, 0, 0.7);
+  border: 0.2vh solid rgba(0, 0, 0, 0.7);
+  font-weight: bold;
 }
 #toDoList {
   width: 35vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#toDoList li span {
+  font-weight: bold;
 }
 #toDoList li button {
   background: none;
@@ -76,8 +119,11 @@ img {
   position: absolute;
   top: 3vh;
   right: 4vh;
+  transition: all 0.5s ease-in-out;
 }
-
+#weather div:hover {
+  padding: 1vh;
+}
 .hidden {
   display: none;
 }
