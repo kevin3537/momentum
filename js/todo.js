@@ -21,12 +21,8 @@ function paintToDo(newToDo) {
 function deleteToDo(event) {
   const id = parseInt(event.target.parentElement.id);
   event.target.parentElement.remove();
-  localStorage.setItem(
-    "todos",
-    JSON.stringify(
-      JSON.parse(localStorage.getItem("todos")).filter((toDo) => toDo.id !== id)
-    )
-  );
+  toDos = toDos.filter((toDo) => toDo.id !== id);
+  localStorage.setItem("todos", JSON.stringify(toDos));
 }
 
 function saveToDos(newToDo) {
